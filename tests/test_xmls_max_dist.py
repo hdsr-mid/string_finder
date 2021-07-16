@@ -1,3 +1,5 @@
+import pytest
+
 from string_finder.constants import TEST_DATA_DIR
 from string_finder.finder import StringsInFilesFinder
 from tests.fixtures import caw_xml_paths
@@ -6,25 +8,24 @@ from tests.fixtures import caw_xml_paths
 caw_xml_paths = caw_xml_paths
 
 
-def test_1(caw_xml_paths):
+def test_1_max_dist(caw_xml_paths):
 
-    word_files_finder = StringsInFilesFinder(
-        file_paths=caw_xml_paths,
-        strings=["WIJKERSLOOT", "2011-09-19"],
-        get_lines=False,
-        stop_after_first_file_hit=True,
-    )
-    results = word_files_finder.run()
-    assert results == {
-        TEST_DATA_DIR / "xmls/HDSR_CAW_1.xml": {"WIJKERSLOOT": "", "2011-09-19": ""}
-    }
+    with pytest.raises(AssertionError):
+        StringsInFilesFinder(
+            file_paths=caw_xml_paths,
+            strings=["WIJKERSLOOT", "2011-09-19"],
+            get_lines=False,
+            max_dist=5,
+            stop_after_first_file_hit=True,
+        )
 
 
-def test_2(caw_xml_paths):
+def test_2_max_dist(caw_xml_paths):
     word_files_finder = StringsInFilesFinder(
         file_paths=caw_xml_paths,
         strings=["WIJKERSLOOT", "2011-09-19"],
         get_lines=True,
+        max_dist=6,
         stop_after_first_file_hit=True,
         stop_after_first_line_hit=True,
     )
@@ -34,11 +35,12 @@ def test_2(caw_xml_paths):
     }
 
 
-def test_3(caw_xml_paths):
+def test_3_max_dist(caw_xml_paths):
     word_files_finder = StringsInFilesFinder(
         file_paths=caw_xml_paths,
         strings=["WIJKERSLOOT", "2011-09-19"],
         get_lines=True,
+        max_dist=6,
         stop_after_first_file_hit=False,
         stop_after_first_line_hit=True,
     )
@@ -49,11 +51,12 @@ def test_3(caw_xml_paths):
     }
 
 
-def test_4(caw_xml_paths):
+def test_4_max_dist(caw_xml_paths):
     word_files_finder = StringsInFilesFinder(
         file_paths=caw_xml_paths,
         strings=["WIJKERSLOOT", "2011-09-19"],
         get_lines=True,
+        max_dist=6,
         stop_after_first_file_hit=False,
         stop_after_first_line_hit=False,
     )

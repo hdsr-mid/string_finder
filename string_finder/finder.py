@@ -2,6 +2,8 @@ import logging
 from pathlib import Path
 from typing import Dict, List, TextIO
 
+import numpy as np
+
 from string_finder.constants import CHUNK_READ_THRESHOLD_BYTES, PROGRESS_PERCENTAGE_STEP
 
 logger = logging.getLogger(__name__)
@@ -13,12 +15,14 @@ class StringsInFilesFinder:
         file_paths: List[Path],
         strings: List[str],
         get_lines: bool = False,
+        max_dist: int = None,
         stop_after_first_file_hit: bool = True,
         stop_after_first_line_hit: bool = True,
     ):
         self.file_paths = file_paths
         self.strings = strings
         self.get_lines = get_lines
+        self.max_dist = max_dist
         self.stop_after_first_file_hit = stop_after_first_file_hit
         self.stop_after_first_line_hit = stop_after_first_line_hit
         self.__validate_constructor()
@@ -30,6 +34,11 @@ class StringsInFilesFinder:
         assert [isinstance(_string, str) for _string in self.strings]
         # assert [isinstance(_path, Path) for _path in self.file_paths]
         assert isinstance(self.get_lines, bool)
+        if self.max_dist:
+            assert (
+                isinstance(self.max_dist, int) and self.max_dist > 0
+            ), f"max_dist must be None or an integer > 0, not an type={type(self.max_dist)}, value={self.max_dist}"
+            assert self.get_lines, f"if max_dist is int>0, then get_lines must be True"
         assert isinstance(self.stop_after_first_file_hit, bool)
         assert isinstance(self.stop_after_first_line_hit, bool)
 
@@ -137,12 +146,138 @@ class StringsInFilesFinder:
             if not self.__file_holds_all_strings(text_io_chunks=text_io_chunks):
                 continue
             if self.get_lines:
-                result[_path] = self.__search_lines(
+                lines = self.__search_lines(
                     text_io_chunks=text_io_chunks, _path=_path, result=result
                 )
+
+                a = [12, 35, 59, 90]
+                b = [
+                    8,
+                    9,
+                    17,
+                    20,
+                    21,
+                    22,
+                    23,
+                    31,
+                    32,
+                    40,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    55,
+                    56,
+                    64,
+                    67,
+                    68,
+                    69,
+                    70,
+                ]
+                c = [1, 5, 30, 67]
+
+                aa = np.array(a)
+                bb = np.array(a)
+                cc = np.array(a)
+
+                from itertools import combinations, product
+
+                def pairs(*lists):
+                    for t in combinations(lists, 2):
+                        for pair in product(*t):
+                            yield pair
+
+                result[_path] = lines
+                # max_dist
             else:
                 result[_path] = {_string: "" for _string in self.strings}
             opened_file.close()
             if self.stop_after_first_file_hit:
                 return result
         return result
+
+
+def create_dist_matrix(lines: List[List[int]]):
+    a = [1, 2, 3]
+    b = [4, 5, 6]
+    c = [7, 8]
+    d = [4]
+
+    lines = [a, b]  # , c, d]
+
+    assert [isinstance(x, list) for x in lines]
+
+    all_combis = np.array(np.meshgrid(*lines)).T
+    matrix_size = all_combis.size
+    nr_lists_with_lines = len([x for x in lines])
+    all_combis_reshaped = all_combis.reshape(-1, nr_lists_with_lines)
+
+    # https://stackoverflow.com/questions/1208118/using-numpy-to-build-an-array-of-all-combinations-of-two-arrays
+    combis3 = np.array(np.meshgrid(a, b, c)).T.reshape(-1, 3)
+    combis4 = np.array(np.meshgrid(a, b, c, d)).T.reshape(-1, 3)
+
+    a = [1, 2, 3]
+    b = [4, 5, 6]
+    print(a)
+    print("-----")
+    print(b)
+    print("-----")
+    print(np.meshgrid(a, b))
+    print("-----")
+    print(np.array(np.meshgrid(a, b)))
+    print("-----")
+    zz = np.array(np.meshgrid(a, b)).T
+    print(zz)
+    print("-----")
+    print(zz.shape)
+    print("-----")
+    aa = np.array(np.meshgrid(a, b)).T.reshape(-1, 3)
+    print(aa)
+    print("-----")
+    print(aa.shape)
+    print("-----")
+    bb = np.array(np.meshgrid(a, b)).T.reshape(-1, 2)
+    print(bb)
+    print("-----")
+    print(bb.shape)
+    print("-----")
+    cc = np.array(np.meshgrid(a, b)).T.reshape(-1, 1)
+    print(cc)
+    print("-----")
+    print(cc.shape)
+    print("-----")
+    # aa=np.array(np.meshgrid(a, b)).T.reshape(0, 3)
+    # print(aa)
+    print("-----")
+    # print(aa.shape)
+    print("-----")
+    dd = np.array(np.meshgrid(a, b)).T.reshape(0, 2)
+    print(dd)
+    print("-----")
+    print(dd.shape)
+    print("-----")
+    ee = np.array(np.meshgrid(a, b)).T.reshape(0, 1)
+    print(ee)
+    print("-----")
+    print(ee.shape)
+    print("-----")
+    ff = np.array(np.meshgrid(a, b)).T.reshape(1, 3)
+    print(ff)
+    print("-----")
+    print(ff.shape)
+    print("-----")
+    print(1)
+
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = [7, 8]
+d = [4]
+
+lines = [a, b]  # , c, d]
+create_dist_matrix(lines=lines)
+
+
+for pair in pairs(a, b, c):
+    print(pair)
