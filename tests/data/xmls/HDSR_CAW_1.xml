@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TimeSeries xmlns="http://www.wldelft.nl/fews/PI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd" version="1.2">
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>001</locationId>
+      <parameterId>Q1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="11:00:00" />
+      <endDate date="2011-09-19" time="19:00:00" />
+      <missVal>-999</missVal>
+      <longName>Berekenddebiet P Dc Formule</longName>
+      <stationName>WIJKERSLOOT</stationName>
+      <units>m3/s</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:00:01</creationTime>
+    </header>
+    <event date="2011-09-19" time="11:00:00" value="0.25" flag="0" />
+    <event date="2011-09-19" time="18:42:15" value="0.25" flag="0" />
+    <event date="2011-09-19" time="18:45:00" value="0.25" flag="0" />
+    <event date="2011-09-19" time="19:00:00" value="0.25" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>001</locationId>
+      <parameterId>IB1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="11:00:00" />
+      <endDate date="2011-09-19" time="19:00:00" />
+      <missVal>-999</missVal>
+      <longName>Vijzel : in bedrijf</longName>
+      <stationName>WIJKERSLOOT</stationName>
+      <units />
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:00:01</creationTime>
+    </header>
+    <event date="2011-09-19" time="11:00:00" value="1" flag="0" />
+    <event date="2011-09-19" time="11:15:00" value="1" flag="0" />
+    <event date="2011-09-19" time="18:42:15" value="1" flag="0" />
+    <event date="2011-09-19" time="18:45:00" value="1" flag="0" />
+    <event date="2011-09-19" time="19:00:00" value="1" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>001</locationId>
+      <parameterId>HO1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="11:00:00" />
+      <endDate date="2011-09-19" time="19:00:00" />
+      <missVal>-999</missVal>
+      <longName>Benedenpeil</longName>
+      <stationName>WIJKERSLOOT</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:00:01</creationTime>
+    </header>
+    <event date="2011-09-19" time="11:00:00" value="2.324" flag="0" />
+    <event date="2011-09-19" time="11:01:05" value="2.323" flag="0" />
+    <event date="2011-09-19" time="11:14:04" value="2.313" flag="0" />
+    <event date="2011-09-19" time="11:15:00" value="2.311" flag="0" />
+    <event date="2011-09-19" time="11:30:00" value="2.312" flag="0" />
+    <event date="2011-09-19" time="11:45:00" value="2.318" flag="0" />
+    <event date="2011-09-19" time="18:15:52" value="2.353" flag="0" />
+    <event date="2011-09-19" time="18:30:00" value="2.352" flag="0" />
+    <event date="2011-09-19" time="18:42:57" value="2.343" flag="0" />
+    <event date="2011-09-19" time="18:45:00" value="2.342" flag="0" />
+    <event date="2011-09-19" time="18:58:47" value="2.333" flag="0" />
+    <event date="2011-09-19" time="19:00:00" value="2.33" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>001</locationId>
+      <parameterId>HB1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="11:00:00" />
+      <endDate date="2011-09-19" time="19:00:00" />
+      <missVal>-999</missVal>
+      <longName>Bovenpeil</longName>
+      <stationName>WIJKERSLOOT</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:00:01</creationTime>
+    </header>
+    <event date="2011-09-19" time="11:00:00" value="3.273" flag="0" />
+    <event date="2011-09-19" time="19:00:00" value="3.24" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>625</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-03-07" time="23:59:59" />
+      <endDate date="2011-03-07" time="23:59:59" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>De Eend</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:12</creationTime>
+    </header>
+    <event date="2011-03-07" time="23:59:59" value="-999.99" flag="3" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>626</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-03-07" time="23:59:59" />
+      <endDate date="2011-03-07" time="23:59:59" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Laan van Snelrewaard</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:12</creationTime>
+    </header>
+    <event date="2011-03-07" time="23:59:59" value="-999.99" flag="3" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>627</locationId>
+      <parameterId>HB1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="08:00:00" />
+      <endDate date="2011-09-19" time="08:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand Ruigeweide</longName>
+      <stationName>Ruigeweide</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="08:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>627</locationId>
+      <parameterId>HO1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="08:00:00" />
+      <endDate date="2011-09-19" time="08:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand Papekop en Diemerbroek</longName>
+      <stationName>Ruigeweide</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="08:00:00" value="-2.171" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>628</locationId>
+      <parameterId>HO1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-08-30" time="18:00:00" />
+      <endDate date="2011-08-30" time="18:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand Harmelerwaard</longName>
+      <stationName>Heldamweg</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-08-30" time="18:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>628</locationId>
+      <parameterId>HB1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-03-07" time="23:59:59" />
+      <endDate date="2011-03-07" time="23:59:59" />
+      <missVal>-999</missVal>
+      <longName>Waterstand Bovenpeil Stuw Heldamweg</longName>
+      <stationName>Heldamweg</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-03-07" time="23:59:59" value="-999.99" flag="3" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>629</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="08:00:00" />
+      <endDate date="2011-09-19" time="08:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Kerkweg</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="08:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>630</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="12:00:00" />
+      <endDate date="2011-09-19" time="12:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Spengen</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="12:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>631</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="12:00:00" />
+      <endDate date="2011-09-19" time="16:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Houtkade</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="12:00:00" value="-2.119" flag="0" />
+    <event date="2011-09-19" time="14:00:00" value="-2.123" flag="0" />
+    <event date="2011-09-19" time="14:15:00" value="-2.122" flag="0" />
+    <event date="2011-09-19" time="14:30:00" value="-2.123" flag="0" />
+    <event date="2011-09-19" time="14:45:00" value="-2.123" flag="0" />
+    <event date="2011-09-19" time="15:00:00" value="-2.123" flag="0" />
+    <event date="2011-09-19" time="15:15:00" value="-2.123" flag="0" />
+    <event date="2011-09-19" time="15:30:00" value="-2.124" flag="0" />
+    <event date="2011-09-19" time="15:45:00" value="-2.124" flag="0" />
+    <event date="2011-09-19" time="16:00:00" value="-2.125" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>632</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="08:00:00" />
+      <endDate date="2011-09-19" time="08:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Hoogzandveld</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="08:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>633</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="08:00:00" />
+      <endDate date="2011-09-19" time="08:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Kerkweg Kockengen</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="08:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>634</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="08:00:00" />
+      <endDate date="2011-09-19" time="08:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Haanwijkerplas</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="08:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>635</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="12:00:00" />
+      <endDate date="2011-09-19" time="12:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Mastwijkerplas</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="12:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>636</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="12:00:00" />
+      <endDate date="2011-09-19" time="12:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Dwarsdamweg</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="12:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>637</locationId>
+      <parameterId>H</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="12:00:00" />
+      <endDate date="2011-09-19" time="12:00:00" />
+      <missVal>-999</missVal>
+      <longName>Waterstand</longName>
+      <stationName>Oostzijder Vlist Zuid</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="12:00:00" value="-999" flag="9" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>909</locationId>
+      <parameterId>HO1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="11:08:47" />
+      <endDate date="2011-09-19" time="18:28:46" />
+      <missVal>-999</missVal>
+      <longName>Boezempeil</longName>
+      <stationName>Waternet Rode Brug</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="11:08:47" value="-0.294" flag="0" />
+    <event date="2011-09-19" time="11:18:47" value="-0.287" flag="0" />
+    <event date="2011-09-19" time="11:28:47" value="-0.277" flag="0" />
+    <event date="2011-09-19" time="11:38:47" value="-0.268" flag="0" />
+    <event date="2011-09-19" time="11:48:47" value="-0.272" flag="0" />
+    <event date="2011-09-19" time="11:58:47" value="-0.282" flag="0" />
+    <event date="2011-09-19" time="12:08:47" value="-0.284" flag="0" />
+    <event date="2011-09-19" time="12:18:47" value="-0.287" flag="0" />
+    <event date="2011-09-19" time="12:28:47" value="-0.282" flag="0" />
+    <event date="2011-09-19" time="12:28:48" value="-0.282" flag="0" />
+    <event date="2011-09-19" time="12:38:48" value="-0.27" flag="0" />
+    <event date="2011-09-19" time="12:48:48" value="-0.287" flag="0" />
+    <event date="2011-09-19" time="12:58:47" value="-0.303" flag="0" />
+    <event date="2011-09-19" time="13:08:47" value="-0.279" flag="0" />
+    <event date="2011-09-19" time="13:08:48" value="-0.279" flag="0" />
+    <event date="2011-09-19" time="13:18:48" value="-0.261" flag="0" />
+    <event date="2011-09-19" time="13:28:48" value="-0.25" flag="0" />
+    <event date="2011-09-19" time="13:38:47" value="-0.275" flag="0" />
+    <event date="2011-09-19" time="13:48:47" value="-0.275" flag="0" />
+    <event date="2011-09-19" time="13:58:47" value="-0.275" flag="0" />
+    <event date="2011-09-19" time="14:08:47" value="-0.293" flag="0" />
+    <event date="2011-09-19" time="14:18:47" value="-0.27" flag="0" />
+    <event date="2011-09-19" time="14:28:47" value="-0.289" flag="0" />
+    <event date="2011-09-19" time="14:38:47" value="-0.293" flag="0" />
+    <event date="2011-09-19" time="14:48:47" value="-0.291" flag="0" />
+    <event date="2011-09-19" time="14:48:48" value="-0.291" flag="0" />
+    <event date="2011-09-19" time="14:58:48" value="-0.289" flag="0" />
+    <event date="2011-09-19" time="15:08:48" value="-0.282" flag="0" />
+    <event date="2011-09-19" time="15:18:47" value="-0.266" flag="0" />
+    <event date="2011-09-19" time="15:28:47" value="-0.294" flag="0" />
+    <event date="2011-09-19" time="15:38:47" value="-0.291" flag="0" />
+    <event date="2011-09-19" time="15:48:47" value="-0.3" flag="0" />
+    <event date="2011-09-19" time="15:58:47" value="-0.31" flag="0" />
+    <event date="2011-09-19" time="16:08:47" value="-0.314" flag="0" />
+    <event date="2011-09-19" time="16:18:47" value="-0.321" flag="0" />
+    <event date="2011-09-19" time="16:28:47" value="-0.305" flag="0" />
+    <event date="2011-09-19" time="16:38:47" value="-0.284" flag="0" />
+    <event date="2011-09-19" time="16:48:47" value="-0.303" flag="0" />
+    <event date="2011-09-19" time="16:58:47" value="-0.305" flag="0" />
+    <event date="2011-09-19" time="17:08:47" value="-0.291" flag="0" />
+    <event date="2011-09-19" time="17:18:47" value="-0.314" flag="0" />
+    <event date="2011-09-19" time="17:28:47" value="-0.3" flag="0" />
+    <event date="2011-09-19" time="17:38:47" value="-0.289" flag="0" />
+    <event date="2011-09-19" time="17:48:47" value="-0.312" flag="0" />
+    <event date="2011-09-19" time="17:58:47" value="-0.303" flag="0" />
+    <event date="2011-09-19" time="18:08:47" value="-0.303" flag="0" />
+    <event date="2011-09-19" time="18:18:46" value="-0.291" flag="0" />
+    <event date="2011-09-19" time="18:28:46" value="-0.287" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>909</locationId>
+      <parameterId>Q1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="11:08:47" />
+      <endDate date="2011-09-19" time="18:28:46" />
+      <missVal>-999</missVal>
+      <longName>Debiet</longName>
+      <stationName>Waternet Rode Brug</stationName>
+      <units>m3/s</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-19</creationDate>
+      <creationTime>20:01:13</creationTime>
+    </header>
+    <event date="2011-09-19" time="11:08:47" value="0.875" flag="0" />
+    <event date="2011-09-19" time="11:18:47" value="0.856" flag="0" />
+    <event date="2011-09-19" time="11:28:47" value="0.699" flag="0" />
+    <event date="2011-09-19" time="11:38:47" value="0.8" flag="0" />
+    <event date="2011-09-19" time="11:48:47" value="1.144" flag="0" />
+    <event date="2011-09-19" time="11:58:47" value="1.861" flag="0" />
+    <event date="2011-09-19" time="12:08:47" value="1.763" flag="0" />
+    <event date="2011-09-19" time="12:18:47" value="0.822" flag="0" />
+    <event date="2011-09-19" time="12:28:47" value="0.987" flag="0" />
+    <event date="2011-09-19" time="12:28:48" value="0.987" flag="0" />
+    <event date="2011-09-19" time="12:38:48" value="0.6" flag="0" />
+    <event date="2011-09-19" time="12:48:48" value="1.266" flag="0" />
+    <event date="2011-09-19" time="12:58:47" value="0.8" flag="0" />
+    <event date="2011-09-19" time="13:08:47" value="0.449" flag="0" />
+    <event date="2011-09-19" time="13:08:48" value="0.449" flag="0" />
+    <event date="2011-09-19" time="13:18:48" value="0.944" flag="0" />
+    <event date="2011-09-19" time="13:28:48" value="1.7" flag="0" />
+    <event date="2011-09-19" time="13:38:47" value="0.875" flag="0" />
+    <event date="2011-09-19" time="13:48:47" value="0.744" flag="0" />
+    <event date="2011-09-19" time="13:58:47" value="1.037" flag="0" />
+    <event date="2011-09-19" time="14:08:47" value="1.087" flag="0" />
+    <event date="2011-09-19" time="14:18:47" value="1.756" flag="0" />
+    <event date="2011-09-19" time="14:28:47" value="1" flag="0" />
+    <event date="2011-09-19" time="14:38:47" value="0.962" flag="0" />
+    <event date="2011-09-19" time="14:48:47" value="0.925" flag="0" />
+    <event date="2011-09-19" time="14:48:48" value="0.925" flag="0" />
+    <event date="2011-09-19" time="14:58:48" value="0.85" flag="0" />
+    <event date="2011-09-19" time="15:08:48" value="1.2" flag="0" />
+    <event date="2011-09-19" time="15:18:47" value="1.274" flag="0" />
+    <event date="2011-09-19" time="15:28:47" value="1.35" flag="0" />
+    <event date="2011-09-19" time="15:38:47" value="0.744" flag="0" />
+    <event date="2011-09-19" time="15:48:47" value="1.399" flag="0" />
+    <event date="2011-09-19" time="15:58:47" value="0.899" flag="0" />
+    <event date="2011-09-19" time="16:08:47" value="1.133" flag="0" />
+    <event date="2011-09-19" time="16:18:47" value="0.962" flag="0" />
+    <event date="2011-09-19" time="16:28:47" value="0.462" flag="0" />
+    <event date="2011-09-19" time="16:38:47" value="0.722" flag="0" />
+    <event date="2011-09-19" time="16:48:47" value="1.325" flag="0" />
+    <event date="2011-09-19" time="16:58:47" value="1.113" flag="0" />
+    <event date="2011-09-19" time="17:08:47" value="1.577" flag="0" />
+    <event date="2011-09-19" time="17:18:47" value="1.075" flag="0" />
+    <event date="2011-09-19" time="17:28:47" value="0.912" flag="0" />
+    <event date="2011-09-19" time="17:38:47" value="1.932" flag="0" />
+    <event date="2011-09-19" time="17:48:47" value="1.024" flag="0" />
+    <event date="2011-09-19" time="17:58:47" value="1.236" flag="0" />
+    <event date="2011-09-19" time="18:08:47" value="1.478" flag="0" />
+    <event date="2011-09-19" time="18:18:46" value="1.412" flag="0" />
+    <event date="2011-09-19" time="18:28:46" value="1.899" flag="0" />
+  </series>
+</TimeSeries>
