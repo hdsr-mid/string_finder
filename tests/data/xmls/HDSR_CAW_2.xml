@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TimeSeries xmlns="http://www.wldelft.nl/fews/PI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd" version="1.2">
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>001</locationId>
+      <parameterId>Q1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="19:00:00" />
+      <endDate date="2011-09-20" time="19:00:00" />
+      <missVal>-999</missVal>
+      <longName>Berekenddebiet P Dc Formule</longName>
+      <stationName>WIJKERSLOOT</stationName>
+      <units>m3/s</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-20</creationDate>
+      <creationTime>20:00:02</creationTime>
+    </header>
+    <event date="2011-09-19" time="19:00:00" value="0.25" flag="0" />
+    <event date="2011-09-19" time="19:15:00" value="0.25" flag="0" />
+    <event date="2011-09-20" time="18:45:00" value="0" flag="0" />
+    <event date="2011-09-20" time="19:00:00" value="0" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>001</locationId>
+      <parameterId>IB1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="19:00:00" />
+      <endDate date="2011-09-20" time="19:00:00" />
+      <missVal>-999</missVal>
+      <longName>Vijzel : in bedrijf</longName>
+      <stationName>WIJKERSLOOT</stationName>
+      <units />
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-20</creationDate>
+      <creationTime>20:00:02</creationTime>
+    </header>
+    <event date="2011-09-19" time="19:00:00" value="1" flag="0" />
+    <event date="2011-09-19" time="19:15:00" value="1" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>909</locationId>
+      <parameterId>HO1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="18:28:46" />
+      <endDate date="2011-09-20" time="18:28:47" />
+      <missVal>-999</missVal>
+      <longName>Boezempeil</longName>
+      <stationName>Waternet Rode Brug</stationName>
+      <units>mNAP</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-20</creationDate>
+      <creationTime>20:01:40</creationTime>
+    </header>
+    <event date="2011-09-20" time="18:18:47" value="-0.328" flag="0" />
+    <event date="2011-09-20" time="18:28:47" value="-0.326" flag="0" />
+  </series>
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>909</locationId>
+      <parameterId>Q1</parameterId>
+      <timeStep unit="nonequidistant" />
+      <startDate date="2011-09-19" time="18:28:46" />
+      <endDate date="2011-09-20" time="18:28:47" />
+      <missVal>-999</missVal>
+      <longName>Debiet</longName>
+      <stationName>Waternet Rode Brug</stationName>
+      <units>m3/s</units>
+      <sourceOrganisation>HDSR</sourceOrganisation>
+      <sourceSystem>CAW 1.10.4230.28964</sourceSystem>
+      <fileDescription>Oppervlaktewater</fileDescription>
+      <creationDate>2011-09-20</creationDate>
+      <creationTime>20:01:40</creationTime>
+    </header>
+    <event date="2011-09-20" time="17:08:47" value="0.987" flag="0" />
+    <event date="2011-09-20" time="17:18:47" value="0.737" flag="0" />
+    <event date="2011-09-20" time="18:28:47" value="2.855" flag="0" />
+  </series>
+</TimeSeries>
