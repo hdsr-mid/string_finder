@@ -1,9 +1,8 @@
-import logging
-from pathlib import Path
-
 from path_finder import FileFinder
-
+from pathlib import Path
 from string_finder.finder import StringsInFilesFinder
+
+import logging
 
 
 def setup_logging() -> None:
@@ -26,7 +25,7 @@ setup_logging()
 
 logger = logging.getLogger(__name__)
 
-logger.info(f"find files")
+logger.info("find files")
 file_finder = FileFinder(
     single_start_dir=Path("Q:/") / "WIS" / "CAW" / "Oppervlaktewater",
     extension=".xml",
