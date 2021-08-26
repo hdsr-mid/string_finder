@@ -7,7 +7,15 @@
 
 
 ### Usage
-
+1. build conda environment from file if you don't have environment already
+```
+> conda env create --name string_finder --file <path_to_project>/environment.yml
+```
+2. run project:
+```
+> conda activate string_finder
+> python <path_to_project>/main.py
+```
 
 ### License 
 [MIT][mit]
