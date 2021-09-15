@@ -257,8 +257,5 @@ def test_4(caw_xml_paths):
             ],
         },
         TEST_DATA_DIR
-        / "xmls/HDSR_CAW_4.xml": {
-            "WIJKERSLOOT": [12, 32, 83],
-            "2011-09-19": [79, 80, 88, 91, 92, 93, 94],
-        },
+        / "xmls/HDSR_CAW_4.xml": {"WIJKERSLOOT": [12, 32, 83], "2011-09-19": [79, 80, 88, 91, 92, 93, 94]},
     }

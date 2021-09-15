@@ -6,7 +6,6 @@ from typing import List
 from typing import TextIO
 
 import logging
-import numpy as np
 
 
 logger = logging.getLogger(__name__)
@@ -170,63 +169,63 @@ def create_dist_matrix(lines: List[List[int]]):
     # combis3 = np.array(np.meshgrid(a, b, c)).T.reshape(-1, 3)
     # combis4 = np.array(np.meshgrid(a, b, c, d)).T.reshape(-1, 3)
 
-    a = [1, 2, 3]
-    b = [4, 5, 6]
-    print(a)
-    print("-----")
-    print(b)
-    print("-----")
-    print(np.meshgrid(a, b))
-    print("-----")
-    print(np.array(np.meshgrid(a, b)))
-    print("-----")
-    zz = np.array(np.meshgrid(a, b)).T
-    print(zz)
-    print("-----")
-    print(zz.shape)
-    print("-----")
-    aa = np.array(np.meshgrid(a, b)).T.reshape(-1, 3)
-    print(aa)
-    print("-----")
-    print(aa.shape)
-    print("-----")
-    bb = np.array(np.meshgrid(a, b)).T.reshape(-1, 2)
-    print(bb)
-    print("-----")
-    print(bb.shape)
-    print("-----")
-    cc = np.array(np.meshgrid(a, b)).T.reshape(-1, 1)
-    print(cc)
-    print("-----")
-    print(cc.shape)
-    print("-----")
-    # aa=np.array(np.meshgrid(a, b)).T.reshape(0, 3)
+    # a = [1, 2, 3]
+    # b = [4, 5, 6]
+    # print(a)
+    # print("-----")
+    # print(b)
+    # print("-----")
+    # print(np.meshgrid(a, b))
+    # print("-----")
+    # print(np.array(np.meshgrid(a, b)))
+    # print("-----")
+    # zz = np.array(np.meshgrid(a, b)).T
+    # print(zz)
+    # print("-----")
+    # print(zz.shape)
+    # print("-----")
+    # aa = np.array(np.meshgrid(a, b)).T.reshape(-1, 3)
     # print(aa)
-    print("-----")
+    # print("-----")
     # print(aa.shape)
-    print("-----")
-    dd = np.array(np.meshgrid(a, b)).T.reshape(0, 2)
-    print(dd)
-    print("-----")
-    print(dd.shape)
-    print("-----")
-    ee = np.array(np.meshgrid(a, b)).T.reshape(0, 1)
-    print(ee)
-    print("-----")
-    print(ee.shape)
-    print("-----")
-    ff = np.array(np.meshgrid(a, b)).T.reshape(1, 3)
-    print(ff)
-    print("-----")
-    print(ff.shape)
-    print("-----")
-    print(1)
+    # print("-----")
+    # bb = np.array(np.meshgrid(a, b)).T.reshape(-1, 2)
+    # print(bb)
+    # print("-----")
+    # print(bb.shape)
+    # print("-----")
+    # cc = np.array(np.meshgrid(a, b)).T.reshape(-1, 1)
+    # print(cc)
+    # print("-----")
+    # print(cc.shape)
+    # print("-----")
+    # # aa=np.array(np.meshgrid(a, b)).T.reshape(0, 3)
+    # # print(aa)
+    # print("-----")
+    # # print(aa.shape)
+    # print("-----")
+    # dd = np.array(np.meshgrid(a, b)).T.reshape(0, 2)
+    # print(dd)
+    # print("-----")
+    # print(dd.shape)
+    # print("-----")
+    # ee = np.array(np.meshgrid(a, b)).T.reshape(0, 1)
+    # print(ee)
+    # print("-----")
+    # print(ee.shape)
+    # print("-----")
+    # ff = np.array(np.meshgrid(a, b)).T.reshape(1, 3)
+    # print(ff)
+    # print("-----")
+    # print(ff.shape)
+    # print("-----")
+    # print(1)
 
 
-a = [1, 2, 3]
-b = [4, 5, 6]
-c = [7, 8]
-d = [4]
-
-lines = [a, b]  # , c, d]
-create_dist_matrix(lines=lines)
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# c = [7, 8]
+# d = [4]
+#
+# lines = [a, b]  # , c, d]
+# create_dist_matrix(lines=lines)
