@@ -1,6 +1,5 @@
 from pathlib import Path
 
-
 CHUNK_READ_THRESHOLD_BYTES = 1024 * 4
 PROGRESS_PERCENTAGE_STEP = 5
 

@@ -1,8 +1,8 @@
-from path_finder import FileFinder
-from pathlib import Path
-from string_finder.finder import StringsInFilesFinder
-
 import logging
+from pathlib import Path
+
+from path_finder import FileFinder
+from string_finder.finder import StringsInFilesFinder
 
 
 def setup_logging() -> None:

@@ -1,9 +1,8 @@
-from string_finder.constants import TEST_DATA_DIR
-from string_finder.finder import StringsInFilesFinder
+import pytest
 from tests.fixtures import caw_xml_paths
 
-import pytest
-
+from string_finder.constants import TEST_DATA_DIR
+from string_finder.finder import StringsInFilesFinder
 
 # silence flake8 error
 caw_xml_paths = caw_xml_paths
@@ -31,7 +30,9 @@ def test_2_max_dist(caw_xml_paths):
         stop_after_first_line_hit=True,
     )
     results = word_files_finder.run()
-    assert results == {TEST_DATA_DIR / "xmls/HDSR_CAW_1.xml": {"WIJKERSLOOT": 12, "2011-09-19": 8}}
+    assert results == {
+        TEST_DATA_DIR / "xmls/HDSR_CAW_1.xml": {"WIJKERSLOOT": 12, "2011-09-19": 8}
+    }
 
 
 def test_3_max_dist(caw_xml_paths):
@@ -262,5 +263,8 @@ def test_4_max_dist(caw_xml_paths):
             ],
         },
         TEST_DATA_DIR
-        / "xmls/HDSR_CAW_4.xml": {"WIJKERSLOOT": [12, 32, 83], "2011-09-19": [79, 80, 88, 91, 92, 93, 94]},
+        / "xmls/HDSR_CAW_4.xml": {
+            "WIJKERSLOOT": [12, 32, 83],
+            "2011-09-19": [79, 80, 88, 91, 92, 93, 94],
+        },
     }

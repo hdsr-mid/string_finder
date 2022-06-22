@@ -1,12 +1,9 @@
-from pathlib import Path
-from string_finder.constants import CHUNK_READ_THRESHOLD_BYTES
-from string_finder.constants import PROGRESS_PERCENTAGE_STEP
-from typing import Dict
-from typing import List
-from typing import TextIO
-
 import logging
+from pathlib import Path
+from typing import Dict, List, TextIO
 
+from string_finder.constants import (CHUNK_READ_THRESHOLD_BYTES,
+                                     PROGRESS_PERCENTAGE_STEP)
 
 logger = logging.getLogger(__name__)
 
@@ -45,7 +42,9 @@ class StringsInFilesFinder:
         assert isinstance(self.stop_after_first_line_hit, bool)
 
     @staticmethod
-    def get_progress_mapper(nr_file_paths: int, progress_step: int = PROGRESS_PERCENTAGE_STEP) -> Dict[int, int]:
+    def get_progress_mapper(
+        nr_file_paths: int, progress_step: int = PROGRESS_PERCENTAGE_STEP
+    ) -> Dict[int, int]:
         """Map file_index to a progress percentage [0-100] with (file_index / total_number_files * 100)
         Example:
             input:
@@ -58,18 +57,27 @@ class StringsInFilesFinder:
         assert 0 < progress_step < 100, "please use a progress_step between 0 and 100"
         # start=0, end=101 to make sure 100% is also logged
         percentages = [x for x in range(0, 101, progress_step)]
-        progress_mapper = {(percentage / 100 * nr_file_paths) - 1: percentage for percentage in sorted(percentages)}
+        progress_mapper = {
+            (percentage / 100 * nr_file_paths) - 1: percentage
+            for percentage in sorted(percentages)
+        }
         progress_mapper = {round(k): v for k, v in progress_mapper.items() if k >= 0}
         return progress_mapper
 
-    def __search_lines(self, text_io_chunks: List[TextIO], _path: Path, result: Dict) -> Dict:
+    def __search_lines(
+        self, text_io_chunks: List[TextIO], _path: Path, result: Dict
+    ) -> Dict:
         string_line_nr = {}
         for _string in self.strings:
             if self.stop_after_first_line_hit:
-                string_line_nr[_string] = self.__get_string_first_line(_string=_string, text_io_chunks=text_io_chunks)
+                string_line_nr[_string] = self.__get_string_first_line(
+                    _string=_string, text_io_chunks=text_io_chunks
+                )
                 assert string_line_nr[_string]
             else:
-                string_line_nr[_string] = self.__get_string_all_lines(_string=_string, text_io_chunks=text_io_chunks)
+                string_line_nr[_string] = self.__get_string_all_lines(
+                    _string=_string, text_io_chunks=text_io_chunks
+                )
         assert sorted(string_line_nr.keys()) == sorted(self.strings)
         return string_line_nr
 
@@ -121,21 +129,27 @@ class StringsInFilesFinder:
         return False if search_string_left else True
 
     def run(self) -> Dict[Path, Dict]:
-        logger.info(f"start finding {self.strings} in {len(self.file_paths)} files, get_lines={self.get_lines}")
+        logger.info(
+            f"start finding {self.strings} in {len(self.file_paths)} files, get_lines={self.get_lines}"
+        )
         result = {}
         for index, _path in enumerate(self.file_paths):
             progress = self.progress_mapper.get(index)
             if progress:
                 logger.info(f"progress {progress}%")
             opened_file = open(file=_path, mode="r")
-            text_io_chunks = [text_io_chunk for text_io_chunk in self.__get_chunks(opened_file=opened_file)]
+            text_io_chunks = [
+                text_io_chunk
+                for text_io_chunk in self.__get_chunks(opened_file=opened_file)
+            ]
             if not self.__file_holds_all_strings(text_io_chunks=text_io_chunks):
                 continue
             if self.get_lines:
-                lines = self.__search_lines(text_io_chunks=text_io_chunks, _path=_path, result=result)
+                lines = self.__search_lines(
+                    text_io_chunks=text_io_chunks, _path=_path, result=result
+                )
 
-                from itertools import combinations
-                from itertools import product
+                from itertools import combinations, product
 
                 def pairs(*lists):
                     for t in combinations(lists, 2):

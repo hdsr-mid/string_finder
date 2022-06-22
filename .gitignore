@@ -127,3 +127,25 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pycharm project files
+.DS_Store
+*.idea
+.idea/
+
+# VSCODE project settings
+.vscode/launch.json
+.vscode/settings.json
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# Python rotating log files (match only files with numeric suffix after .log.)
+*.log.*
+!*.log.*[^0-9]*
